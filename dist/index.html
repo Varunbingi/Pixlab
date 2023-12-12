@@ -15,20 +15,21 @@
                 <img src="assets/Logo.png" alt="logo">
             </div>
             <div class="md:grid hidden justify-around content-center  grid-flow-col">
-                <a href="#" class="hover:font-bold">Home</a>
-                <a href="#" class="hover:font-bold">About Us</a>
-                <a href="#" class="hover:font-bold">Our App</a>
-                <a href="#" class="hover:font-bold">Contact</a>
+                <a href="#Home" class="hover:font-bold">Home</a>
+                <a href="#About" class="hover:font-bold">About Us</a>
+                <a href="#OurApp" class="hover:font-bold">Our App</a>
+                <a href="#Contact" class="hover:font-bold">Contact</a>
             </div>
             <div class="md:grid hidden grid-flow-col gap-10 content-center justify-end">
-                <button class="font-bold hover:scale-110">Log in</button>
-                <button class="bg-orange-500 p-2 rounded-2xl text-white hover:scale-110 hover:font-bold">Sign up</button>
+                <button class="font-bold hover:scale-110" onclick="window.location.href = 'login.html';">Log in</button>
+                <button class="bg-orange-500 p-2 rounded-2xl text-white hover:scale-110 hover:font-bold" onclick="window.location.href = 'signUp.html';">Sign up</button>
             </div>
             <div class="grid md:hidden justify-end mr-10 content-center">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <script src="scrpit.js"></script>
         </nav>
-        <div class="grid md:grid-cols-[45%_45%] grid-cols-1 gap-10 md:h-[90vh] justify-center m-10">
+        <div class="grid md:grid-cols-[45%_45%] grid-cols-1 gap-10 md:h-[90vh] justify-center m-10" id="Home">
             <div class="grid content-center gap-20 ">
                 <h1 class="md:text-7xl text-5xl font-bold">We boost <br> growth for your statup business</h1>
                 <p>Our goal is top at the heary of creativity services industry as a digital creator. In has a after comment</p>
@@ -57,7 +58,7 @@
                 
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-20 m-10">
+        <div class="grid grid-cols-1 gap-20 m-10" id="About">
             <div class="text-center">
                 <p class="tracking-widest opacity-70">SERVICE</p>
                 <h1 class="md:text-6xl text-4xl font-semibold">Our Vision & Our Goal</h1>
@@ -138,8 +139,8 @@
             </div>
         </div>
             <div class="m-10">
-                <div class="text-center">
-                    <p class="tracking-widest opacity-70">OUR TEAM</p>
+                <div class="text-center" id="OurApp">
+                    <p class="tracking-widest opacity-70" >OUR TEAM</p>
                     <h1 class="md:text-6xl text-4xl font-semibold">Mett The Team</h1>
                 </div>
                 <div class="grid md:grid-cols-3 grid-cols-1 md:h-[50vh] gap-10 content-center  mt-10 ">
@@ -180,7 +181,7 @@
             <p class="opacity-70 tracking-widest">OUR TEAM</p>
             <h1 class="md:text-6xl text-4xl font-semibold">Subscribe Our Newsleter</h1>
         </div>
-        <div class="grid grid-cols-[40%_50%] gap-10 m-10">
+        <div class="grid grid-cols-[40%_50%] gap-10 m-10" id="Contact">
             <div>
                 <img src="assets/Frame.png" alt="">
             </div>
@@ -199,7 +200,7 @@
             <a href="#">Portfolio</a>
             <a href="#">How it Works</a>
             <a href="#">Pricing</a>
-            <a href="#">about</a>
+            <a href="#About">about</a>
             <a href="#">Login</a>
             </div>
         </div>

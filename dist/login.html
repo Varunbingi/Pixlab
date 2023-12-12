@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body >
+    <section class=" w-full h-[100vh] bg-cover bg-center bg-no-repeat bg-opacity-30 grid  items-center" style="background-image: url('/dist/assets/login-bg.jpg');">
+        <form action="#" method="get" class="grid justify-self-center ">
+        <div class="p-5 grid grid-cols-1 justify-self-center content-between bg-white bg-opacity-10 backdrop-blur-sm  border-white  border-2 rounded-2xl h-[80vh] w-[40vw] ">
+            
+                <img src="assets/Logo.png" alt="logo" class="grid justify-self-center" >
+                <div class="grid justify-self-center content-between w-[90%]">
+                    <label for="Email" class="text-white">Email</label>
+                    <input type="email" placeholder="Email" class="border-b-2 border-black  h-8  ">
+                </div>
+                <div class="grid justify-self-center w-[90%] content-between">
+                    <label for="password" class="text-white">Password</label>
+                    <div class="w-full grid grid-cols-[100%_0%] items-center">
+                        <input type="password" placeholder="password" id="id_password" class="border-b-2 border-black  h-8 ">
+                        <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;margin-left: -30px;"></i>
+                    </div>
+                    <script src="login.js"></script>
+                    <div>
+                        <input type="checkbox" class="h-4 w-4">
+                        <span class="text-white">Remember me?</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1">
+                    <button class="bg-blue-700 text-white p-2 rounded-3xl w-[40%] grid justify-self-center font-bold hover:scale-105">Login</button>    
+                    <a href="forgot.html" class="text-white grid justify-end">forgot password?</a>
+                </div>
+                <div class="text-white  border-b-2 flex justify-center relative ">
+                    <span class="border-2 border-white   absolute -bottom-4 " >OR</span>
+                </div>
+                <div class="grid grid-cols-3 justify-self-center gap-7">
+                    <i class="fa-brands fa-google fa-2xl" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: white;"></i>
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: white;"></i>
+                </div>
+                <h1 class="flex justify-self-center text-white ">Create an account? <a href="signUp.html" class="grid justify-end font-bold "><u> SignUp</u></a></h1>
+                
+            
+        </div>
+        </form>
+    </section>
+</body>
+</html>
